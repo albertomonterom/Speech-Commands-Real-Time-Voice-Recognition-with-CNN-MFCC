@@ -1,21 +1,21 @@
-# Speech Commands — Real-Time Voice Recognition (CNN + MFCC)
+# Reconocimiento de Voz en Tiempo Real (CNN + MFCC)
 
-A real-time speech command recognition system using the **Speech Commands** dataset, **MFCC + delta + delta-delta features**, and a **CNN** optimized for short audio clips.
+Un sistema de reconocimiento de comandos de voz en tiempo real que utiliza el conjunto de datos **Comandos de Voz**, **MFCC + funciones delta + delta-delta** y una **CNN** optimizada para audios cortos.
 
-Recognizes 15 words and runs on any machine without re-downloading the dataset.
-
----
-
-## Features
-- MFCC, delta, delta-delta feature extraction  
-- Silence trimming + amplitude normalization  
-- CNN with ~90–93% accuracy  
-- Real-time microphone inference  
-- Fully portable (only the trained model is required)
+Reconoce 15 palabras y funciona en cualquier equipo sin tener que volver a descargar el conjunto de datos.
 
 ---
 
-## Installation
+## Características
+- Extracción de características MFCC, delta, delta-delta
+- Recorte de silencios + normalización de amplitud
+- CNN con una precisión de aproximadamente el 90-93 %
+- Inferencia de micrófono en tiempo real
+- Totalmente portátil (solo se requiere el modelo entrenado)
+  
+---
+
+## Instalación
 
 ```bash
 python -m venv venv
@@ -29,14 +29,14 @@ pip install -r requirements.txt
 
 ---
 
-## Training (optional)
+## Entrenamiento (opcional)
 
 ```bash
 python src/preprocess_features.py
 python src/train_cnn.py
 ```
 
-These scripts will generate:
+Estos scripts generarán:
 
 - `features/mfcc_words.npz`
 - `models/cnn_words.keras`
@@ -44,38 +44,38 @@ These scripts will generate:
 
 ---
 
-## Evaluation
+## Evaluación
 
-To evaluate the trained model, run:
+Para evaluar el modelo, corre:
 
 ```bash
 python src/evaluate_cnn.py
 ```
 
-This script will display:
+Este script mostrará:
 
-- accuracy
-- confusion matrix
-- classification report (precision, recall, F1-score)
-- Word Error Rate (WER)
+- Precisión
+- Matriz de confusión
+- Informe de clasificación (precisión, recuperación, puntuación F1)
+- Índice de error de palabras (WER)
 
 ---
 
-## Real-Time Recognition
+## Reconocimiento en tiempo real
 
-To run real-time microphone inference:
+Para ejecutar la inferencia del micrófono en tiempo real:
 
 ```bash
 python src/infer_mic.py
 ```
 
-Keyboard controls:
+Controles del teclado:
 
-- s → start recording
-- e → stop recording and predict
-- q → quit
+- s → iniciar grabación
+- e → detener grabación y predecir
+- q → salir
 
-Example output:
+Ejemplo de salida:
 
 ```bash
 Recording...
