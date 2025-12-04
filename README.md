@@ -19,8 +19,10 @@ Reconoce 15 palabras y funciona en cualquier equipo sin tener que volver a desca
 
 ```bash
 python -m venv venv
+
 # Windows
 venv\Scripts\activate
+
 # macOS / Linux
 source venv/bin/activate
 
