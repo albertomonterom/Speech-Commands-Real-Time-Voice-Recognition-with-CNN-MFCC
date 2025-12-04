@@ -19,7 +19,10 @@ Reconoce 15 palabras y funciona en cualquier equipo sin tener que volver a desca
 
 El modelo reconoce los siguientes 15 comandos del conjunto Speech Commands:
 
-`bed down follow go happy house left no off on right stop up visual yes`
+```
+bed  down  follow  go  happy  house  left  no  off  
+on  right  stop  up  visual  yes
+```
 
 ---
 
@@ -29,6 +32,19 @@ El modelo reconoce los siguientes 15 comandos del conjunto Speech Commands:
   (El proyecto usa TensorFlow 2.20.0, que es compatible con estas versiones.)
 - Micrófono funcional
 - Windows, macOS o Linux
+
+---
+
+## Clonar el repositorio
+
+Primero, clona el proyecto y entra en la carpeta:
+
+```bash
+git clone https://github.com/albertomonterom/Speech-Commands-CNN.git
+cd Speech-Commands-CNN
+```
+
+(O descarga el ZIP desde GitHub.)
 
 ---
 
