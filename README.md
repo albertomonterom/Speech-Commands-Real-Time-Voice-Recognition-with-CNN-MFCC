@@ -25,7 +25,8 @@ El modelo reconoce los siguientes 15 comandos del conjunto Speech Commands:
 
 ## Requisitos
 
-- Python 3.9 o superior
+- Python 3.9, 3.10, 3.11 o 3.12
+  (El proyecto usa TensorFlow 2.20.0, que es compatible con estas versiones.)
 - Micrófono funcional
 - Windows, macOS o Linux
 
@@ -57,15 +58,35 @@ El modelo reconoce los siguientes 15 comandos del conjunto Speech Commands:
 
 ## Instalación
 
+Antes de instalar dependencias, actualiza pip:
+
+```bash
+python -m pip install --upgrade pip
+```
+
+Luego crea el entorno virtual:
+
 ```bash
 python -m venv venv
+```
 
-# Windows
+Actívalo:
+
+**Windows**
+
+```bash
 venv\Scripts\activate
+```
 
-# macOS / Linux
+**macOS / Linux**
+
+```bash
 source venv/bin/activate
+```
 
+Finalmente instala los requisitos:
+
+```bash
 pip install -r requirements.txt
 ```
 
