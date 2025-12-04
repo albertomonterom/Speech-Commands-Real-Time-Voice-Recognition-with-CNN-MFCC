@@ -28,7 +28,7 @@ on  right  stop  up  visual  yes
 
 ## Requisitos
 
-- Python 3.9, 3.10, 3.11 o 3.12
+- Python >= 3.11
   (El proyecto usa TensorFlow 2.20.0, que es compatible con estas versiones.)
 - Micrófono funcional
 - Windows, macOS o Linux
