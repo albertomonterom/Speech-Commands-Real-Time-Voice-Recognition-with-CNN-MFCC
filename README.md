@@ -1,6 +1,6 @@
 # Reconocimiento de Voz en Tiempo Real (CNN + MFCC)
 
-Un sistema de reconocimiento de comandos de voz en tiempo real que utiliza el conjunto de datos **Comandos de Voz**, **MFCC + funciones delta + delta-delta** y una **CNN** optimizada para audios cortos.
+Un sistema de reconocimiento de comandos de voz en tiempo real que utiliza el conjunto de datos **Speech Commands**, **MFCC + funciones delta + delta-delta** y una **CNN** optimizada para audios cortos.
 
 Reconoce 15 palabras y funciona en cualquier equipo sin tener que volver a descargar el conjunto de datos.
 
