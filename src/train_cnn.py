@@ -9,12 +9,12 @@ import os
 
 # === Cargar features ===
 data = np.load(FEATURES_PATH)
-X = data["X"]                # (N, 13, 32)
+X = data["X"]                # (N, 39, 32)
 y_enc = data["y"]
 classes = data["classes"]
 
 # Añadir canal (CNN requiere 4D)
-X = X[..., np.newaxis]       # (N, 13, 32, 1)
+X = X[..., np.newaxis]       # (N, 39, 32, 1)
 
 # One-hot encoding de etiquetas
 y_onehot = to_categorical(y_enc, num_classes=len(classes))
